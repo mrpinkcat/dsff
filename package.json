@@ -1,0 +1,21 @@
+{
+  "name": "dsff",
+  "version": "1.0.0",
+  "description": "DSFF - Discord Shared Files Finder",
+  "main": "src/index.js",
+  "author": "mrpinkcat",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0",
+    "ora": "^5.4.0",
+    "prompts": "^2.4.0"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/node": "^14.14.36"
+  },
+  "scripts": {
+    "start": "node src/index.js"
+  }
+}
