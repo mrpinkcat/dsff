@@ -48,4 +48,4 @@ Copy the `.env.example` file and rename it to `.env`. You can complete this file
 
 ## Running
 
-After you've installed DSFF, just run **`npm run start`**, with `npm`, or **`yarn start`**, with yarn, to get the appplication running. Don't forget to invite your bot to your server :)
+After you've installed DSFF, just run **`npm run start`**, with npm, or **`yarn start`**, with yarn, to get the appplication running. Don't forget to invite your bot to your server :)
