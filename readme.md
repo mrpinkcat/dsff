@@ -6,7 +6,7 @@ It’s easy to use and save you time when you searching for a old shared file.
 - Multiple servers support
 - File output
 
-![demo](media\demo.gif)
+![demo](./media/demo.gif)
 
 ## Installation
 
