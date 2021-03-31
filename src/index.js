@@ -1,4 +1,5 @@
-const ora = require('ora'); // Terminal pinner lib
+const ora = require('ora'); // Terminal spinner lib
+const prompts = require('prompts'); // Terminal prompts lib
 const Discord = require('discord.js'); // Discord SDK
 const dotenv = require('dotenv');
 
@@ -17,7 +18,17 @@ client.on('ready', async () => {
   
   const selectedGuild = await guildSelection(client);
   const selectedChannel = await channelSelection(client, selectedGuild);
-  const allMessage = await messageFetcher(selectedChannel);
+  /**
+   * @type {{scanBotMessages: boolean}}
+   */
+  const { scanBotMessages } = await prompts({
+    type: 'confirm',
+    name: 'scanBotMessages',
+    message: 'Do you want to scan the bot messages?',
+    initial: false,
+  });
+  const allMessage = await messageFetcher(selectedChannel, scanBotMessages);
+  
 });
 
 client.login(process.env.DISCORD_TOKEN);
